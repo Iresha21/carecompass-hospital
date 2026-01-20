@@ -1,0 +1,128 @@
+/* General Navbar Styling */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Search Bar Styling */
+nav form {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav form input {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+}
+
+nav form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+nav form button {
+    background: #00aaff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav form button:hover {
+    background: #0088cc;
+}
+
+/* Mobile Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: #00aaff;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    .menu-toggle:hover {
+        background: #0088cc;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+/* Highlight Staff Portal */
+nav ul li a[href="login.php"] {
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 8pax;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Icon for Staff Portal */
+nav ul li a[href="login.php"]::before {
+    content: "\f007"; /* Font Awesome User Icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* Hover Effect */
+nav ul li a[href="login.php"]:hover {
+    background: white;
+    color: #00aaff;
+    transform: scale(1.1);
+}
