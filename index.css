@@ -1,0 +1,1037 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Home Section Styling */
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: url('uploads/hospital-bg.jpg') no-repeat center center/cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: fadeInLeftBounce 1.5s ease-out;
+}
+
+.home-section p {
+    font-size: 1.3em;
+    max-width: 650px;
+    line-height: 1.8;
+    opacity: 0.9;
+    animation: fadeInUpFloat 2s ease-out;
+}
+
+/* Buttons */
+.home-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-btn {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-btn i {
+    margin-right: 10px;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.info-box {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.info-box i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.footer-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    font-size: 1.5em;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.footer-section a:hover {
+    transform: scale(1.2);
+}
+
+.footer-section iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* About Us Section */
+.about-us {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+/* Branches Section */
+.branches {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.branches h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.branch-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.branch {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.branch img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.branch h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.branch p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.branch:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .branch-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Appointment Booking Section */
+.appointment-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.appointment-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+}
+
+/* Form Styling */
+.appointment-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInLeftBounce 1.5s ease-out;
+}
+
+.appointment-form label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.appointment-form select,
+.appointment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.appointment-form select option {
+    background: #0f2027;
+    color: #fff;
+}
+
+.appointment-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.appointment-form button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.appointment-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Doctor Cards Section */
+
+.doctors-page h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+    margin-top: 100px;
+}
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.doctor-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 20%; 
+    transition: opacity 0.3s ease;
+}
+
+.doctor-card:hover img {
+    opacity: 0.7;
+}
+
+.doctor-card-content {
+    padding: 20px;
+    color: #fff;
+}
+
+.doctor-card-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.doctor-card-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.doctor-card-content .doctor-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.doctor-card-content .doctor-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Filter Buttons */
+.categories {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.category-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Services Section */
+.services-title{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+    margin-top: 100px;
+}
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.service-card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.service-card button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight Animation for Service Card */
+@keyframes highlightEffect {
+    0% { transform: scale(1); box-shadow: 0px 0px 0px rgba(255, 215, 0, 0); }
+    50% { transform: scale(1.1); box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); }
+    100% { transform: scale(1); box-shadow: 0px 0px 0px rgba(255, 215, 0, 0); }
+}
+
+.highlight {
+    animation: highlightEffect 2.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        padding: 20px;
+    }
+    
+    .service-card {
+        width: 250px;
+    }
+
+    .service-card h3 {
+        font-size: 1.6em;
+    }
+
+    .service-card p {
+        font-size: 1em;
+    }
+}
+
+/* Medical Record Section */
+.medical-record-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* background: url('uploads/medical-record-bg.jpg') no-repeat center center/cover; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+.medical-record-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+    color: white;
+}
+
+/* Form Styling */
+.medical-record-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeInLeftBounce 1.5s ease-out;
+}
+
+#record-result {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.medical-record-form label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: white;
+}
+
+.medical-record-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    outline: none;
+}
+
+.medical-record-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.medical-record-form button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.medical-record-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInLeftBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.8);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeInUpFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for medical records */
+@media (max-width: 768px) {
+    .medical-record-section h2 {
+        font-size: 2em;
+    }
+    .medical-record-form {
+        padding: 20px;
+    }
+    .medical-record-form label {
+        font-size: 1em;
+    }
+    .medical-record-form input {
+        font-size: 0.9em;
+    }
+    .medical-record-form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+/* Ensure the result is below the form */
+
+
+/* Styling for the medical record link */
+.record-link {
+    margin-top: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+}
+
+.record-link a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.record-link a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Styling for no record found message */
+.no-record {
+    margin-top: 10px;
+    padding: 15px;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #ff4d4d;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animation for appearing effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Payment Page Styling */
+.payment-page {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.payment-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+    margin-top: 100px;
+}
+
+.payment-page form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInLeftBounce 1.5s ease-out;
+    margin: 20px auto;
+}
+
+.payment-page form label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.payment-page form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.payment-page form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.payment-page form button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.payment-page form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.payment-page .receipt-status {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.payment-page .receipt-status.success {
+    color: green;
+}
+
+.payment-page .receipt-status.error {
+    color: red;
+}
+
+.payment-page .payment-confirmed {
+    margin-top: 20px;
+    color: green;
+    font-size: 1.3em;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .payment-page h2 {
+        font-size: 2em;
+    }
+
+    .payment-page form {
+        width: 90%;
+    }
+
+    .payment-page form input,
+    .payment-page form button {
+        padding: 10px;
+    }
+}
+
+
+/* Login Section Styling */
+.form-section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUpFloat 2s ease-out;
+}
+
+.form-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    animation: fadeInUpFloat 1.5s ease-out;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.form-section input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-section input:focus {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.form-section button {
+    width: 100%;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-section button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.form-section p {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.form-section a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-section a:hover {
+    color: #ff512f;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-container input {
+    flex: 1;
+    padding-right: 40px;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    bottom: 32px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #666;
+}
+.toggle-password:hover {
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeInUpFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Doctor Search Section */
+.doctors-page h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUpFloat 1.5s ease-out;
+}
+
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.doctor-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.doctor-card:hover img {
+    opacity: 0.7;
+}
+
+.doctor-card-content {
+    padding: 20px;
+    color: #fff;
+}
+
+.doctor-card-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.doctor-card-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.doctor-card-content .doctor-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.doctor-card-content .doctor-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight Animation */
+@keyframes highlightEffect {
+    0% { transform: scale(1); box-shadow: 0px 0px 0px rgba(255, 215, 0, 0); }
+    50% { transform: scale(1.1); box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); }
+    100% { transform: scale(1); box-shadow: 0px 0px 0px rgba(255, 215, 0, 0); }
+}
+.highlight {
+    animation: highlightEffect 2.5s ease-in-out;
+}
+
